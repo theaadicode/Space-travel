@@ -1,0 +1,151 @@
+body{
+    background-image: linear-gradient(black,rgb(20,20,20));
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    margin: 0;
+}
+header{
+    background-color: black;
+    border: 2px solid black;
+}
+.header{
+    /* margin: 0; */
+    display: flex;
+    /* border: 2px solid white; */
+    margin: 10px 200px;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+header h2{
+    margin: 0;
+    height: 100%;
+    color: white;
+    /* border: 2px solid red; */
+    /* font-family: 'Permanent Marker', cursive; */
+}
+
+.list-navigation{
+    /* padding: 10px; */
+    margin: 0;
+    display: flex;
+    /* border:2px solid yellow; */
+    justify-content: center;
+    list-style: none;
+}
+.list-navigation li{
+    /* border: 2px solid green; */
+    padding: 8px 13px;
+}
+.list-navigation li:hover{
+    background-color: rgb(36,36,36);
+    color: black;
+}
+.image{
+    background-color: black;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    opacity: 0.5;
+}
+figcaption{
+    color: white;
+    position: absolute;
+    top: 30%;
+    text-align: left;
+    /* margin: 0 auto; */
+    padding: 25px;
+    font-size: 3rem;
+    z-index: 100;
+    /* border: 2px solid red; */
+    animation-name: title-animation;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes title-animation {
+    from{
+        opacity: 0;
+        }
+    to{
+        opacity: 1;
+        transform: translateX(50%);
+    }
+}
+.testimonials{
+    /* border: 2px solid rgb(211, 203, 203); */
+    margin: 10px 200px;
+    display: inline-block;
+}
+.testimonials h1{
+    text-align: center;
+}
+.testi-class{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+}
+.testi{
+    display: inline-block;
+    border: 2px solid gray;
+    margin: 8px;
+    padding: 10px;
+    transition: all 1s;
+    background-image: linear-gradient(rgb(36, 36, 36),rgb(18, 18, 18));
+
+}
+.testi:hover{
+    border-color: white;
+    border-radius: 16px;
+}
+.avator-icon{
+    width:50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.testi h3{
+    text-align: center;
+}
+.testi p{
+    text-align: justify;
+}
+.image{
+    text-align: center;
+}
+footer{
+    border: 2px solid rgb(64, 64, 64);
+    background-color: rgb(64, 64, 64);
+}
+.footer{
+    /* border:2px solid green; */
+    margin: 20px 200px;
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.social-media{
+    /* border:2px solid black; */
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.social-media img{
+    width:20px;
+    height: 20px;
+    /* color: wheat; */
+    transition: all 0.5s;
+}
+.social-media img:hover{
+    width: 25px;
+    height: 25px;
+}
